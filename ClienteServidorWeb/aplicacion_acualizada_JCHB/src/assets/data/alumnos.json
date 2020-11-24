@@ -1,0 +1,40 @@
+{
+  "alumnos": [
+    {
+      "nocontrol": "M19010892",
+      "name": "CARRANZA CAMPOS FERNANDO"
+    },
+    {
+      "nocontrol": "M08010033",
+      "name": "CHAVEZ GUERRERO YADIRA"
+    },
+    {
+      "nocontrol": "M19010889",
+      "name": "HERNANDEZ BARRERA JUAN CARLOS"
+    },
+    {
+      "nocontrol": "M12010296",
+      "name": "MORENO GATICA OSCAR DANIEL"
+    },
+    {
+      "nocontrol": "M11010539",
+      "name": "NAREZ RUÍZ LUIS FERNANDO"
+    },
+    {
+      "nocontrol": "M08010346",
+      "name": "SAMANO RAMIREZ ANA KARENT"
+    },
+    {
+      "nocontrol": "M13010062",
+      "name": "SUAREZ ZINZUN CHRISTIAN EMMANUEL"
+    },
+    {
+      "nocontrol": "M19010890",
+      "name": "VENTURA ROMERO CHRISTIAN"
+    },
+    {
+      "nocontrol": "M19010891",
+      "name": "VILLANUEVA MASCORT ERICK DALET"
+    }
+  ]
+}

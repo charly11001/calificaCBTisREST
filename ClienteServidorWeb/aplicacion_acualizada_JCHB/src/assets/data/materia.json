@@ -1,0 +1,19 @@
+{
+  "materias": [
+    {
+      "id": "1",
+      "name": "INGENIERIA DE SOFTWARE",
+      "creditos": "5"
+    },
+    {
+      "id": "2",
+      "name": "TEMAS SELECTOS",
+      "creditos": "6"
+    },
+    {
+      "id": "3",
+      "name": "LENGUAJES WEB",
+      "creditos": "7"
+    }
+  ]
+}
