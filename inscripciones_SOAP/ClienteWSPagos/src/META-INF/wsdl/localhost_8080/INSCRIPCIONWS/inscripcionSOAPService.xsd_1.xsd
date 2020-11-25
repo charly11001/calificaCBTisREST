@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.2-b608 (trunk-7979; 2015-01-21T12:50:19+0000) JAXWS-RI/2.2.11-b150120.1832 JAXWS-API/2.2.12 JAXB-RI/2.2.12-b141219.1637 JAXB-API/2.2.13-b141020.1521 svn-revision#unknown. --><xs:schema xmlns:tns="http://servicios/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://servicios/">
+
+<xs:element name="actualizarEstatus" type="tns:actualizarEstatus"/>
+
+<xs:element name="actualizarEstatusResponse" type="tns:actualizarEstatusResponse"/>
+
+<xs:element name="consultarPago" type="tns:consultarPago"/>
+
+<xs:element name="consultarPagoResponse" type="tns:consultarPagoResponse"/>
+
+<xs:element name="consultarPagos" type="tns:consultarPagos"/>
+
+<xs:element name="consultarPagosResponse" type="tns:consultarPagosResponse"/>
+
+<xs:complexType name="actualizarEstatus">
+<xs:sequence>
+<xs:element name="validado" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="actualizarEstatusResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="consultarPagos">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="consultarPagosResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:pago" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="pago">
+<xs:sequence>
+<xs:element name="conceptoPagoID" type="tns:conceptoPago" minOccurs="0"/>
+<xs:element name="fechaRealizacion" type="xs:string" minOccurs="0"/>
+<xs:element name="fechaValidacion" type="xs:string" minOccurs="0"/>
+<xs:element name="monto" type="xs:int"/>
+<xs:element name="pagoID" type="xs:int"/>
+<xs:element name="validado" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="conceptoPago">
+<xs:sequence>
+<xs:element name="conceptoPagoID" type="xs:int"/>
+<xs:element name="descripcion" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="consultarPago">
+<xs:sequence>
+<xs:element name="validado" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="consultarPagoResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:pago" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
